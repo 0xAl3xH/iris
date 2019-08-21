@@ -72,7 +72,7 @@ def run_rule(rule):
                 print('Alerting', number, 'with message:', message)
                 rule['delay_count'] = rule['delay_count'] + 1
                 print(rule)
-                #alert(number, message)
+                alert(number, message)
             else:
                 # TODO: apply a timestamp so we can skip checking messages that already have a response 
                 rule['delay_count'] = 0
